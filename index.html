@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #f3f3f3;
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            #contain {
+                background-color: black;
+                padding: 20px;
+                border-radius: 10px;
+                width: 235px;
+                
+            }
+            #ele {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+            }
+            #signs button{
+        color:plum;
+        font-weight: bolder;
+            }
+            #numbers button{
+                color:limegreen;
+                font-weight: bolder;
+            
+            }
+            #signs, #numbers {
+               
+                display: contents;
+            }
+            button {
+                padding: 20px;
+                border: none;
+                border-radius: 100%;
+                background-color: #888;
+        
+                font-size: 20px;
+            }
+            button:hover {
+                background-color: #aaa;
+            }
+            button:active {
+                background-color: #666;
+            }
+            #disp{
+                color: gray;
+                margin-bottom: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="contain">
+            <div id="disp" >.</div>
+
+            <div id="ele">
+                <div id="signs">
+                    
+                    <button class="sign" id="sign" value="%">%</button>
+                    <button class="sign"id="sign" value="/">/</button>
+                    <button class="sign"id="sign" value="*">*</button>
+                    <button class="sign"id="sign" value="-">-</button>
+                    <button class="sign"id="sign" value="+">+</button>
+                </div>
+                <div id="numbers">
+                    <button class="number"id="number" value="7">7</button>
+                    <button class="number"id="number" value="8">8</button>
+                    <button class="number" id="number" value="9">9</button>
+                    <button class="number"id="number" value="4">6</button>
+                    <button class="number"id="number" value="5">5</button>
+                    <button class="number"id="number" value="6">4</button>
+                    <button class="number"id="number" value="3">3</button>
+                    <button class="number"id="number" value="2">2</button>
+                    <button class="number"id="number" value="1">1</button>
+                    <button id="num" value=".">.</button>
+                    <button class="number"id="number" value="0">0</button>
+                    <button id="nu" value="=">=</button>
+                </div>
+            </div>
+        </div>
+        <script src="code.js">
+
+        </script>
+    </body>
+</html>
